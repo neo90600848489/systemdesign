@@ -18,4 +18,4 @@ MultiStep process
 - Temporal, aws stepFunction, 
 
 Scaling Reads 
--indexing , denormalisation , horizontal scaling, read replica, Database sharding,sharding (functional , geobased)
+-indexing , denormalisation , horizontal scaling, read replica, Database sharding,sharding (functional , geobased) , caching 
