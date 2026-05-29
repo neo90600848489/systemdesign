@@ -16,3 +16,6 @@ Read Contention
 
 MultiStep process 
 - Temporal, aws stepFunction, 
+
+Scaling Reads 
+-indexing , denormalisation , horizontal scaling, read replica, Database sharding 
