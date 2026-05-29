@@ -1,1 +1,10 @@
 Rate Limiter 
+- in api gateway (rate limit algorithm) -> round trip shold be less (means not dedicated service) - multiple nodes distrubuted nodes , then redis introduced as a single 
+- determine using userid,ipv4,apitoken
+- algorithm fixed window counter(interval part will not be stored), sliding window log(memory handling per user at 1 min window) , token but algorithm ()
+- token but algorithm - dealing with contention in case of redis as read conflict issue 
+- 1M requests/second -> single redis (50,000-100,000)- consistent hashing with multiple node server
+- high availability and fault tolerance -> async replication
+- minimize latency overhead - maintain a pool of persistent connection
+
+ 
