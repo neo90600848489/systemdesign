@@ -12,3 +12,7 @@ Read Contention
 - two phase commit   - commit when both are prepared to commit - multiple database + tolerate eventual consistency
 - Distributed locks- Redis with TTL , zookeeper etc/etd,Database columns  
 - Saga Pattern - compensation steps work after any of the process fails- multiple database + No tolerate eventual consistency
+
+
+MultiStep process 
+- Temporal, aws stepFunction, 
