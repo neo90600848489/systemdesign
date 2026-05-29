@@ -7,7 +7,7 @@ Real Time Updates
 
 Read Contention 
 - SERIALIZABLE - strong isolation than read commited 
-- Pessimistic locking - select and update in one transaction 
+- Pessimistic locking - select and update in one transaction , deadlock with pessimistic locking chances
 - Optimstic locking - version update , during update set version = version+1 
 - two phase commit   - commit when both are prepared to commit
 - Distributed locks- Redis with TTL , zookeeper etc/etd,Database columns 
