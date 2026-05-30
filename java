@@ -7,3 +7,5 @@ String immutable in Java - thread safety
 Shallow vs deep copy - copy reference , deep copy - copy actual objects
 deadlock - threads waiting for resoureces , prevention - remove circualr dependency, use timeout   
 ExecutorService - frramework for managing thread
+wait and sleep - wait release lock , sleep don't
+class immutable - make class final , no setters , deep copy mutable fields  , new instance for any modification
