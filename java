@@ -6,3 +6,4 @@ Comparable and Comparator - chaining comparision in comparator
 String immutable in Java - thread safety   
 Shallow vs deep copy - copy reference , deep copy - copy actual objects
 deadlock - threads waiting for resoureces , prevention - remove circualr dependency, use timeout   
+ExecutorService - frramework for managing thread
