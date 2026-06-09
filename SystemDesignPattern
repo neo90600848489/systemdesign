@@ -19,3 +19,7 @@ MultiStep process
 
 Scaling Reads 
 -indexing , denormalisation , horizontal scaling, read replica, Database sharding,sharding (functional , geobased) , caching (application caching , cdn and edge caching)
+
+-Nosql vs sql 
+sql- structured data , schema , indexes , join , transaction , acid properties 
+no sql -  key-value, document, column-family, and graph formats
