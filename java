@@ -1,4 +1,9 @@
 == and equals() -> for primitive check value , equals check content , for string x="hello", string y="hello" x==y -> true , .intern() forces pool lookup
+  Object          ← equals() defined here (reference check)
+  └── String    ← overrides equals() (char-by-char check)
+  └── Integer   ← overrides equals() (value check)
+  └── ArrayList ← overrides equals() (element-by-element check)
+  
 (HashMap and Hashtable)-> (threadsafe , not threadsafe) ,(allow null key multiple null values, null key and null values not allowed),()
 Collections.synchronizedMap()-> Map<String, String> syncMap = Collections.synchronizedMap(new HashMap<>())- synchronise all  map methd
 fail-fast(through concurrent modification exception) vs fail safe iterator , copyonarrayList() and ConcurrentHashMap make it failsafe iterator 
