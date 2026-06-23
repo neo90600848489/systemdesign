@@ -23,3 +23,32 @@ Scaling Reads
 -Nosql vs sql 
 sql- structured data , schema , indexes , join , transaction , acid properties 
 no sql -  key-value, document, column-family, and graph formats
+
+
+Redis - 
+Redis as a Cache
+Redis as a Distributed Lock
+- one issue , primary dies after acquiring lock and replication stop and , replica becomes primary  ,
+  another acquires lock now two holder acquire same lock and do the transaction
+
+- solve it by fencing tokens - token given by redis on each lock acquires 
+example - 
+
+t=0   Client A acquires lock, gets token 100
+      Client A starts doing work...
+
+t=15  Client A pauses (GC freeze, OS scheduling)
+      Lock TTL expires
+
+t=16  Client B acquires lock, gets token 101
+      Client B does work, writes to storage with token 101 ✅
+      Storage records: "last seen token = 101"
+
+t=45  Client A resumes, still thinks it holds the lock
+      Client A tries to write to storage with token 100
+      Storage checks: 100 < 101 → REJECT ❌
+
+
+
+
+
